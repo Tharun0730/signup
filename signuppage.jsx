@@ -54,21 +54,7 @@ const LoginPage = () => {
    setPassword(value)
    
   }
-  
-  
-
-  // const handleChange = event => {
-  //   setEmail(event.target.value);
-  // };
-
   const handleSubmit = event => {
-
-
-    // setError(null);
-    // setpassworderror(null);
-    // // setnav(null)
-    // setpm(null)
-    // setem(null)
 
     if (isValidEmail(email)) {
       console.log('The email is valid');
@@ -97,58 +83,7 @@ const LoginPage = () => {
     }else {
       setnav(false)}
   }
-
-//   const validateEmail = () => {
-//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     return emailRegex.test(email);
-//   }; 
-
-//   const validatePassword = () => {
-//     // Customize the password validation as needed
-//     // For example, require at least 8 characters
-//     return password.length >= 8;
-//   };
-//   const handleLogin = () => {
-    
-//     if (!password) {
-//         setemailerror('Email and password are required');
-//       } else if (!validateEmail()) {
-//         setemailerror('Invalid email format');
-//       } else if (!validatePassword()) {
-//         setemailerror('Password must be at least 8 characters');
-//       } else {
-//         // Perform further actions, such as submitting the form
-//         // For now, just clear the error message
-//         setemailerror('');
-//       }
-//     //   password message
-//       if( !email){  
-//          setpassworderror('Email and password are required');
-//     } else if (!validateEmail()) {
-//         setpassworderror('Invalid email format');
-//     } else if (!validatePassword()) {
-//         setpassworderror('Password must be at least 8 characters');
-//     } else {
-//       // Perform further actions, such as submitting the form
-//       // For now, just clear the error message
-//       setpassworderror('');
-//     }
-
-  
 console.log(email,password,cus)
-
-//     // Simulate server verification. In a real app, this would be done on the server.
-//     // const correctEmail = 'user@example.com';
-//     // const correctPassword = 'password123';
-
-//     // if (email === correctEmail && password === correctPassword) {
-//     //   setLoginSuccess(true);
-//     //   setLoginError(false);
-//     // } else {
-//     //   setLoginSuccess(false);
-//     //   setLoginError(true);
-//     // }
-//   };
   return (
 
     <Box sx={{width:"500px",height:"500px",border:"1px solid",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column",gap:"10px"}}>
